@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <!-- Define la clase principal del formulario -->
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <!-- Establece las dimensiones de la ventana -->
+  <property name="geometry">
+   <rect>
+    <x>0</x> <!-- Coordenada X inicial de la ventana -->
+    <y>0</y> <!-- Coordenada Y inicial de la ventana -->
+    <width>762</width> <!-- Ancho de la ventana -->
+    <height>371</height> <!-- Altura de la ventana -->
+   </rect>
+  </property>
+  <!-- Define el título de la ventana -->
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <!-- Etiqueta para mostrar el título "Sintaxis" -->
+  <widget class="QLabel" name="labelSintaxis">
+   <property name="geometry">
+    <rect>
+     <x>270</x> <!-- Posición X de la etiqueta -->
+     <y>10</y> <!-- Posición Y de la etiqueta -->
+     <width>261</width> <!-- Ancho de la etiqueta -->
+     <height>51</height> <!-- Altura de la etiqueta -->
+    </rect>
+   </property>
+   <!-- Texto en formato HTML para estilo del título -->
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; font-style:italic;&quot;&gt;Sintaxis&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <!-- Botón que genera un árbol sintáctico -->
+  <widget class="QPushButton" name="buttonSintactico">
+   <property name="geometry">
+    <rect>
+     <x>50</x> <!-- Posición X del botón -->
+     <y>230</y> <!-- Posición Y del botón -->
+     <width>151</width> <!-- Ancho del botón -->
+     <height>31</height> <!-- Altura del botón -->
+    </rect>
+   </property>
+   <!-- Texto del botón -->
+   <property name="text">
+    <string>Árbol sintáctico</string>
+   </property>
+  </widget>
+  <!-- Etiqueta que indica dónde ingresar la expresión -->
+  <widget class="QLabel" name="labelExpresion">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>80</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ingrese expresión</string>
+   </property>
+  </widget>
+  <!-- Campo de texto para ingresar la expresión -->
+  <widget class="QTextEdit" name="textExpresion">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>70</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <!-- Etiqueta para seleccionar la derivación -->
+  <widget class="QLabel" name="labelDerivacion">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>150</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Derivación</string>
+   </property>
+  </widget>
+  <!-- Botón de opción para derivación a la izquierda -->
+  <widget class="QRadioButton" name="radioButtonIzq">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>160</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Izquierda</string>
+   </property>
+  </widget>
+  <!-- Botón de opción para derivación a la derecha -->
+  <widget class="QRadioButton" name="radioButtonDer">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>160</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Derecha</string>
+   </property>
+  </widget>
+  <!-- Botón que genera un árbol abstracto -->
+  <widget class="QPushButton" name="buttonSintactico_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>230</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Árbol abstracto</string>
+   </property>
+  </widget>
+  <!-- Botón que genera una tabla de derivación -->
+  <widget class="QPushButton" name="buttonSintactico_3">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>230</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tabla de derivación</string>
+   </property>
+  </widget>
+ </widget>
+ <!-- Sección reservada para incluir recursos adicionales -->
+ <resources/>
+ <!-- Sección reservada para conectar señales y slots -->
+ <connections/>
+</ui>
